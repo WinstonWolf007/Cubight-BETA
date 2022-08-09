@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="logo" onclick="disibleSmallNav()">
+        <div></div>
+    </div>
+    <nav>
+        <ul id="txt1">
+            <li><a href="./about/about.html">About</a></li>
+            <li><a href="?">Game</a></li>
+        </ul>
+        <ul id="txt2">
+            <li>Login</li>
+            <li>Sign in</li>
+        </ul>
+    </nav>
+
+    <div class="textBox"></div>
+
+    <div id="smallNav">
+        <ul>
+            <li><a href="./about/about.html">About</a></li>
+            <li><a href="?">Game</a></li>
+            <li>Login</li>
+            <li>Sign in</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        let nav = document.getElementById('smallNav');
+        
+        nav.style.height = window.innerHeight.toString()+'px'
+    
+    </script>
+</body>
+</html>

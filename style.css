@@ -1,0 +1,122 @@
+:root {
+    --BG_PAGE: #151515;
+    --FG_TXT_1: #FFFFFF;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background-color: var(--BG_PAGE);
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+a {
+    color: var(--FG_TXT_1);
+    text-decoration: none;
+}
+
+/* ################################################# */
+#logo {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    background-color: #52FFD5;
+    margin: 30px;
+    top: 0px;
+    z-index: 2;
+}
+
+#logo div {
+    width: 60px;
+    height: 60px;
+    background-color: var(--BG_PAGE);
+    margin: 5px;
+}
+
+nav {
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    color: var(--FG_TXT_1);
+    background-color: var(--BG_PAGE);
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 100px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-family: monospace, sans-serif;
+    transition: 0.5s;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    color: #52FFD5;
+}
+
+/* ################################################# */
+#smallNav {
+    text-align: center;
+    display: none;
+    top: 0px;
+    position: absolute;
+
+    color: var(--FG_TXT_1);
+    font-size: 30px;
+    font-family: monospace, sans-serif;
+    white-space: inherit;
+    background-color: #202020;
+    width: 100%;
+}
+
+#smallNav ul li {
+    margin-top: 25%;
+}
+
+#smallNav ul li:first-child {
+    margin-top: 150px;
+}
+/* ################################################# */
+
+.textBox {
+    color: var(--FG_TXT_1);
+    font-size: 40px;
+    font-family: monospace, sans-serif;
+    text-align: center;
+    margin-top: 200px;
+}
+
+@keyframes slowText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ################################################# */
+@media screen and (max-width: 963px) {
+    nav {
+        display: none;
+    }
+    #logo {
+        right: 0px;
+    }
+    .textBox {
+        margin-top: 200px;
+        font-size: 30px;
+    }
+}
